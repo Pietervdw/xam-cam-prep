@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             xmlns:pancakeView="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             xmlns:debugRainbows="clr-namespace:Xamarin.Forms.DebugRainbows;assembly=Xamarin.Forms.DebugRainbows"
+             xmlns:iOsSpecific="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="BlankApp3.Views.HomePage"
+             Title="{Binding Title}"
+             BackgroundImageSource="bgpink.png"
+             BackgroundColor="#F3F5F6"
+             debugRainbows:DebugRainbow.ShowColors="false"
+             iOsSpecific:NavigationPage.IsNavigationBarTranslucent="True">
+
+    <Grid BackgroundColor="Transparent" 
+          VerticalOptions="FillAndExpand" 
+          HorizontalOptions="FillAndExpand">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <pancakeView:PancakeView
+            Grid.Row="1"
+            BackgroundColor="#F9F2F3"
+            CornerRadius="10" 
+            Opacity="0.5"
+            Padding="0"
+            Margin="20, 5, 20, 0" HeightRequest="200">
+
+            <pancakeView:PancakeView.Shadow>
+                <pancakeView:DropShadow Color="#ECECEC"  Offset="50,0" BlurRadius="50"/>
+            </pancakeView:PancakeView.Shadow>
+            <pancakeView:PancakeView.Border>
+                <pancakeView:Border Color="#E2DEDE" Thickness="1" />
+            </pancakeView:PancakeView.Border>
+
+            <StackLayout Opacity="1" Margin="20" BackgroundColor="#F9F2F3" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                <Label Text="blah" TextColor="Black"></Label>
+            </StackLayout>
+
+
+        </pancakeView:PancakeView>
+        <pancakeView:PancakeView
+            Grid.Row="2"
+            BackgroundColor="White"
+            CornerRadius="10" 
+            Padding="0"
+            Margin="20, 5, 20, 0"></pancakeView:PancakeView>
+    </Grid>
+
+</ContentPage>

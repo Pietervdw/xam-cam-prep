@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			 xmlns:iOsSpecific="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+			 x:Class="TabbedPageWithNavigationPage.SchedulePage"
+			 Title="This Week"
+             iOsSpecific:NavigationPage.HideNavigationBarSeparator="true">
+
+    <NavigationPage.TitleView>
+        <AbsoluteLayout  HorizontalOptions="FillAndExpand" Margin="0">
+            <Label AbsoluteLayout.LayoutBounds=".5, .5, 1, 1"
+                   AbsoluteLayout.LayoutFlags="All"
+                   HorizontalTextAlignment="Center"
+                   Text="Unyte"/>
+            <ImageButton AbsoluteLayout.LayoutBounds=".5, .5, 1, 1"
+                         AbsoluteLayout.LayoutFlags="All"
+                         BackgroundColor="White" Source="bob.png" HorizontalOptions="EndAndExpand" HeightRequest="30" Margin="0,0,20,0"></ImageButton>
+        </AbsoluteLayout>
+    </NavigationPage.TitleView>
+
+    <ContentPage.Content>
+		<StackLayout>
+			<Label Text="This week's appointments go here" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+			<Button Text="Upcoming Appointments" Clicked="OnUpcomingAppointmentsButtonClicked" VerticalOptions="CenterAndExpand" />
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>
+
+<!-- 
+    
+https://social.msdn.microsoft.com/Forums/en-US/f5b5a8b4-3e4b-4237-9264-029b8915420c/how-to-center-a-text-using-the-titleview-feature?forum=xamarinforms
+https://social.msdn.microsoft.com/Forums/en-US/5daca2c2-e5d7-4ad8-80a1-27f7899abad9/how-to-center-an-image-in-titleview-when-toolbaritems-are-displayed?forum=xamarinforms
+https://stackoverflow.com/questions/64137693/xamarin-forms-center-navigationpage-title
+    
+    -->

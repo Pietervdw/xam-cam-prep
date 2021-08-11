@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Grid xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BlankApp2.AppFrame"
+             x:Name="appFrame">
+
+
+
+    <ContentView Content="{Binding Path=Content,Source={x:Reference appFrame}}"
+                 HorizontalOptions="FillAndExpand"
+                 VerticalOptions="FillAndExpand"
+                 x:Name="ContentGrid"/>
+
+    <Image Aspect="AspectFill"
+           BackgroundColor="Transparent"
+           Opacity="{Binding ShadowOpacity, Source={x:Reference appFrame}}"
+           Source="shadow.png"
+           VerticalOptions="Start"/>
+
+    <Image x:Name="tabShadow"
+           Aspect="AspectFill"
+           Rotation="180"
+           BackgroundColor="Transparent"
+           IsVisible="{Binding ShowTabShadow, Source={x:Reference appFrame}}"
+           Source="shadow.png"
+           VerticalOptions="End"/>
+
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Unyte" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" Margin="110,0,0,0"></Label>
+            <ImageButton BackgroundColor="White" Source="bob.png" HorizontalOptions="EndAndExpand" HeightRequest="30" Margin="0,0,20,0"></ImageButton>
+        </StackLayout>
+    </NavigationPage.TitleView>
+
+</Grid>

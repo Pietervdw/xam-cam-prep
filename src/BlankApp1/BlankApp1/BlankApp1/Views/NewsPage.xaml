@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             xmlns:blankApp1="clr-namespace:BlankApp1;assembly=BlankApp1"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="BlankApp1.Views.NewsPage" >
+
+    <blankApp1:AppFrame>
+        <blankApp1:AppFrame.Content>
+            <StackLayout>
+                <Label Text="News Page" 
+                       VerticalOptions="CenterAndExpand" 
+                       HorizontalOptions="CenterAndExpand" />
+            </StackLayout>
+        </blankApp1:AppFrame.Content>
+    </blankApp1:AppFrame>
+   
+</ContentPage>

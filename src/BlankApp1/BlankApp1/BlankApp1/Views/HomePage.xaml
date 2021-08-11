@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             xmlns:blankApp1="clr-namespace:BlankApp1;assembly=BlankApp1"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="BlankApp1.Views.HomePage"
+             NavigationPage.HasNavigationBar="False" Padding="0">
+
+    <blankApp1:TabbedAppFrame>
+        <blankApp1:TabbedAppFrame.Content>
+            <ScrollView Padding="0">
+                <StackLayout>
+                    <Label Text="Home Page" 
+                           VerticalOptions="CenterAndExpand" 
+                           HorizontalOptions="CenterAndExpand" />
+                    <Button Text="Go to MainPage" Command="{prism:NavigateTo 'ProfilePage'}" 
+                            VerticalOptions="CenterAndExpand" 
+                            HorizontalOptions="CenterAndExpand"></Button>
+                </StackLayout>
+            </ScrollView>
+        </blankApp1:TabbedAppFrame.Content>
+    </blankApp1:TabbedAppFrame>
+
+</ContentPage>

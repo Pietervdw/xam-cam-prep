@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:TabbedPageWithNavigationPage;assembly=TabbedPageWithNavigationPage"
+            xmlns:androidSpecific="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            xmlns:iOsSpecific="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+            x:Class="TabbedPageWithNavigationPage.MainPage"
+            androidSpecific:TabbedPage.IsSmoothScrollEnabled="false"
+            androidSpecific:TabbedPage.ToolbarPlacement="Bottom"
+            BarTextColor="Black"
+            SelectedTabColor="Aqua"
+            iOsSpecific:NavigationPage.HideNavigationBarSeparator="true">
+
+    <NavigationPage Title="Today" IconImageSource="today.png" iOsSpecific:NavigationPage.HideNavigationBarSeparator="true">
+        <x:Arguments>
+            <local:TodayPage></local:TodayPage>
+        </x:Arguments>
+    </NavigationPage>
+
+    <NavigationPage Title="Schedule" IconImageSource="schedule.png" iOsSpecific:NavigationPage.HideNavigationBarSeparator="true">
+		<x:Arguments>
+			<local:SchedulePage />
+		</x:Arguments>
+	</NavigationPage>
+
+    <NavigationPage Title="Settings" IconImageSource="settings.png" iOsSpecific:NavigationPage.HideNavigationBarSeparator="true">
+        <x:Arguments>
+            <local:SettingsPage />
+        </x:Arguments>
+    </NavigationPage>
+
+	
+</TabbedPage>

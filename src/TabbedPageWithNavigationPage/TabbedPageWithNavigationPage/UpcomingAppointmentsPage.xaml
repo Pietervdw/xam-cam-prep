@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			 xmlns:iOsSpecific="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+			 x:Class="TabbedPageWithNavigationPage.UpcomingAppointmentsPage"
+			 Title="Upcoming"
+             NavigationPage.HasBackButton="False"
+             iOsSpecific:NavigationPage.HideNavigationBarSeparator="true">
+    <NavigationPage.TitleView>
+        <AbsoluteLayout  HorizontalOptions="FillAndExpand" Margin="0">
+            <Label AbsoluteLayout.LayoutBounds=".5, .5, 1, 1"
+                   AbsoluteLayout.LayoutFlags="All"
+                   HorizontalTextAlignment="Center"
+                   Text="Unyte"/>
+
+        </AbsoluteLayout>
+    </NavigationPage.TitleView>
+
+    <ContentPage.Content>
+		<StackLayout>
+			<Label Text="Upcoming appointments go here" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+			<Button Text="Back" Clicked="OnBackButtonClicked" VerticalOptions="CenterAndExpand" />
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

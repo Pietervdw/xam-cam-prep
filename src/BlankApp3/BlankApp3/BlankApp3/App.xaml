@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<prism:PrismApplication xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             x:Class="BlankApp3.App">
+
+    <prism:PrismApplication.Resources>
+        <ResourceDictionary>
+            <OnPlatform x:TypeArguments="x:String" x:Key="PoppinsBold">
+                <On Platform="iOS" Value="Poppins-Bold"/>
+                <On Platform="Android" Value="Poppins-Bold.ttf#Bold"/>
+                <On Platform="UWP" Value="/Assets/Fonts/Poppins-Bold.ttf#"/>
+            </OnPlatform>
+            <OnPlatform x:TypeArguments="x:String" x:Key="PoppinsMedium">
+                <On Platform="iOS" Value="Poppins-Medium"/>
+                <On Platform="Android" Value="Poppins-Medium.ttf#Regular"/>
+                <On Platform="UWP" Value="/Assets/Fonts/Poppins-Medium.ttf#Poppins"/>
+            </OnPlatform>
+            <OnPlatform x:TypeArguments="x:String" x:Key="PoppinsSemiBold">
+                <On Platform="iOS" Value="Poppins-SemiBold"/>
+                <On Platform="Android" Value="Poppins-SemiBold.ttf#Regular"/>
+                <On Platform="UWP" Value="/Assets/Fonts/Poppins-SemiBold.ttf#Poppins"/>
+            </OnPlatform>
+            <OnPlatform x:TypeArguments="x:String" x:Key="PoppinsRegular">
+                <On Platform="iOS" Value="Poppins-Regular"/>
+                <On Platform="Android" Value="Poppins-Regular.ttf#Regular"/>
+            </OnPlatform>
+        </ResourceDictionary>
+    </prism:PrismApplication.Resources>
+
+</prism:PrismApplication>

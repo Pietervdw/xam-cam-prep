@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             xmlns:blankApp2="clr-namespace:BlankApp2;assembly=BlankApp2"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="BlankApp2.ViewModels.NewsPage" 
+             BackgroundColor="White" 
+             NavigationPage.HasNavigationBar="False">
+    
+
+
+    <blankApp2:AppFrame ShadowOpacity="5">
+        <blankApp2:AppFrame.Content>
+            <StackLayout>
+                <Label Text="News Page" 
+                       VerticalOptions="CenterAndExpand" 
+                       HorizontalOptions="CenterAndExpand" />
+            </StackLayout>
+        </blankApp2:AppFrame.Content>
+    </blankApp2:AppFrame>
+
+
+</ContentPage>

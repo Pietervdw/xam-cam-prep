@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             xmlns:tabs="http://sharpnado.com"
+             xmlns:views="clr-namespace:BlankApp1.Views;assembly=BlankApp1"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="BlankApp1.Views.SharpnadoPage1">
+
+    <ContentPage.Content>
+        <Grid ColumnSpacing="0" RowSpacing="0"
+              BackgroundColor="#F0F0F3">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="95" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <tabs:ViewSwitcher x:Name="Switcher"
+                             Grid.Row="0"
+                             Animate="True"
+                             SelectedIndex="{Binding SelectedIndex, Mode=TwoWay}">
+                <tabs:LazyView x:TypeArguments="views:View1"></tabs:LazyView>
+                <tabs:LazyView x:TypeArguments="views:View2"></tabs:LazyView>
+            </tabs:ViewSwitcher>
+
+            <tabs:TabHostView Grid.Row="2"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Start"
+                            HeightRequest="60"
+                            WidthRequest="280"
+                            TabType="Fixed"
+                            IsSegmented="True"
+                            CornerRadius="30"
+                            Margin="15"
+                            BackgroundColor="#681E58"
+                            SelectedIndex="{Binding Source={x:Reference Switcher}, Path=SelectedIndex, Mode=TwoWay}"
+                            Shades="{StaticResource ShadowBottom}">
+
+                <tabs:TabHostView.Tabs>
+                    <tabs:BottomTabItem Label="News" UnselectedLabelColor="White"/>
+                    <tabs:BottomTabItem Label="Products" UnselectedLabelColor="White"/>
+                    <tabs:BottomTabItem Label="Portfolio" UnselectedLabelColor="White"/>
+                </tabs:TabHostView.Tabs>
+            </tabs:TabHostView>
+
+        </Grid>
+    </ContentPage.Content>
+
+</ContentPage>

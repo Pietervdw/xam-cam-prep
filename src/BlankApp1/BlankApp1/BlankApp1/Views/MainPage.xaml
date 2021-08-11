@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BlankApp1.Views.MainPage"
+             xmlns:tb="http://sharpnado.com"
+             Title="{Binding Title}"
+             BackgroundColor="White"
+             NavigationPage.HasNavigationBar="False">
+
+    <ContentPage.Content>
+        <Grid ColumnSpacing="0" RowSpacing="0"
+              BackgroundColor="#F0F0F3">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="130" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="95" />
+            </Grid.RowDefinitions>
+
+            <tb:ViewSwitcher x:Name="Switcher"
+                               Grid.Row="1"
+                               Animate="False">
+            </tb:ViewSwitcher>
+
+            <tb:TabHostView Grid.Row="2"
+                              HorizontalOptions="Center"
+                              VerticalOptions="Start"
+                              HeightRequest="60"
+                              WidthRequest="280"
+                              TabType="Fixed"
+                              IsSegmented="True"
+                              CornerRadius="30"
+                              Margin="15"
+                              BackgroundColor="#681E58"
+                              Shades="{StaticResource ShadowBottom}">
+
+                <tb:TabHostView.Tabs>
+                    <tb:BottomTabItem Label="News" UnselectedLabelColor="White"/>
+                    <tb:BottomTabItem Label="Products" UnselectedLabelColor="White"/>
+                    <tb:BottomTabItem Label="Portfolio" UnselectedLabelColor="White"/>
+                </tb:TabHostView.Tabs>
+
+            </tb:TabHostView>
+
+        </Grid>
+    </ContentPage.Content>
+
+</ContentPage>
