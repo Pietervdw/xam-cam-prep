@@ -40,7 +40,7 @@
 
     </custom:CustomNavigationPage>
 
-    <custom:CustomNavigationPage IconImageSource="products.png" iOsSpecific:NavigationPage.HideNavigationBarSeparator="true">
+    <custom:CustomNavigationPage IconImageSource="products.png" iOsSpecific:NavigationPage.HideNavigationBarSeparator="true" BarTextColor="Black">
         <x:Arguments>
             <views:ProductsPage></views:ProductsPage>
         </x:Arguments>

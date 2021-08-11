@@ -6,7 +6,7 @@
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="BlankApp3.Views.PortfolioPage"
              BackgroundColor="#F3F5F6"
-             BackgroundImageSource="bgpink.png"
+             BackgroundImageSource="bgblue.png"
              iOsSpecific:NavigationPage.IsNavigationBarTranslucent="True">
 
     <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">

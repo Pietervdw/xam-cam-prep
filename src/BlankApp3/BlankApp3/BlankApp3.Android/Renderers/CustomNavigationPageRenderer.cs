@@ -7,9 +7,12 @@ using Android.App;
 using Android.Content;
 using Android.Widget;
 using BlankApp3.Custom;
+using BlankApp3.Droid.Renderers;
 
+[assembly: ExportRenderer(typeof(CustomNavigationPage), typeof(CustomNavigationPageRenderer))]
 namespace BlankApp3.Droid.Renderers
 {
+
     public class CustomNavigationPageRenderer : NavigationPageRenderer
     {
         public CustomNavigationPageRenderer(Context context) : base(context)

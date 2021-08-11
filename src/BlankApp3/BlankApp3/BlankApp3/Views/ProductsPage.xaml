@@ -5,13 +5,19 @@
              xmlns:iOsSpecific="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="BlankApp3.Views.ProductsPage"
-             BackgroundColor="#F3F5F6"
-             BackgroundImageSource="bgpink.png"
-             iOsSpecific:NavigationPage.IsNavigationBarTranslucent="True">
+             BackgroundColor="#292929"
+             iOsSpecific:NavigationPage.IsNavigationBarTranslucent="True" Title="Products">
+
+    <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+
+        <Image x:Name="BackgroundImage" Aspect="AspectFill" Source="bgblue.png" />
+
+        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+            <Label Text="Products"></Label>
+        </StackLayout>
+
+    </Grid>
 
 
-    <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
-        <Label Text="Products"></Label>
-    </StackLayout>
 
 </ContentPage>

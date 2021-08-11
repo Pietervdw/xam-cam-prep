@@ -8,7 +8,7 @@
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="BlankApp3.Views.HomePage"
              Title="{Binding Title}"
-             BackgroundImageSource="bgpink.png"
+             BackgroundImageSource="bgblue.png"
              BackgroundColor="#F3F5F6"
              debugRainbows:DebugRainbow.ShowColors="false"
              iOsSpecific:NavigationPage.IsNavigationBarTranslucent="True">
