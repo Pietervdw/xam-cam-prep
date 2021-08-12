@@ -13,7 +13,7 @@
             SelectedTabColor="#26273C"
             BarBackgroundColor="White" Padding="0" >
 
-    <custom:CustomNavigationPage IconImageSource="home.png" 
+    <custom:CustomNavigationPage IconImageSource="home" 
                                  iOsSpecific:NavigationPage.HideNavigationBarSeparator="true"
                                  iOsSpecific:NavigationPage.IsNavigationBarTranslucent="true">
         <x:Arguments>
@@ -28,7 +28,7 @@
      
     </custom:CustomNavigationPage>
 
-    <custom:CustomNavigationPage IconImageSource="graph.png" 
+    <custom:CustomNavigationPage IconImageSource="graph" 
                                  iOsSpecific:NavigationPage.HideNavigationBarSeparator="true"
                                  iOsSpecific:NavigationPage.IsNavigationBarTranslucent="true">
         <x:Arguments>
@@ -43,7 +43,7 @@
 
     </custom:CustomNavigationPage>
 
-    <custom:CustomNavigationPage IconImageSource="products.png" 
+    <custom:CustomNavigationPage IconImageSource="products" 
                                  iOsSpecific:NavigationPage.HideNavigationBarSeparator="true" 
                                  iOsSpecific:NavigationPage.IsNavigationBarTranslucent="true"
                                  BarTextColor="Black">
@@ -59,7 +59,7 @@
 
     </custom:CustomNavigationPage>
 
-    <custom:CustomNavigationPage IconImageSource="news.png" 
+    <custom:CustomNavigationPage IconImageSource="news" 
                                  iOsSpecific:NavigationPage.HideNavigationBarSeparator="true" 
                                  iOsSpecific:NavigationPage.IsNavigationBarTranslucent="true"
                                  BarTextColor="Black">
