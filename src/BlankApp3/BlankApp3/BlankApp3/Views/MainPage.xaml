@@ -14,7 +14,8 @@
             BarBackgroundColor="White" Padding="0" >
 
     <custom:CustomNavigationPage IconImageSource="home.png" 
-                          iOsSpecific:NavigationPage.HideNavigationBarSeparator="true">
+                                 iOsSpecific:NavigationPage.HideNavigationBarSeparator="true"
+                                 iOsSpecific:NavigationPage.IsNavigationBarTranslucent="true">
         <x:Arguments>
             <views:HomePage></views:HomePage>
         </x:Arguments>
@@ -27,7 +28,9 @@
      
     </custom:CustomNavigationPage>
 
-    <custom:CustomNavigationPage IconImageSource="graph.png" iOsSpecific:NavigationPage.HideNavigationBarSeparator="true">
+    <custom:CustomNavigationPage IconImageSource="graph.png" 
+                                 iOsSpecific:NavigationPage.HideNavigationBarSeparator="true"
+                                 iOsSpecific:NavigationPage.IsNavigationBarTranslucent="true">
         <x:Arguments>
             <views:PortfolioPage></views:PortfolioPage>
         </x:Arguments>
@@ -40,7 +43,10 @@
 
     </custom:CustomNavigationPage>
 
-    <custom:CustomNavigationPage IconImageSource="products.png" iOsSpecific:NavigationPage.HideNavigationBarSeparator="true" BarTextColor="Black">
+    <custom:CustomNavigationPage IconImageSource="products.png" 
+                                 iOsSpecific:NavigationPage.HideNavigationBarSeparator="true" 
+                                 iOsSpecific:NavigationPage.IsNavigationBarTranslucent="true"
+                                 BarTextColor="Black">
         <x:Arguments>
             <views:ProductsPage></views:ProductsPage>
         </x:Arguments>
@@ -53,7 +59,10 @@
 
     </custom:CustomNavigationPage>
 
-    <custom:CustomNavigationPage IconImageSource="news.png" iOsSpecific:NavigationPage.HideNavigationBarSeparator="true" BarTextColor="Black">
+    <custom:CustomNavigationPage IconImageSource="news.png" 
+                                 iOsSpecific:NavigationPage.HideNavigationBarSeparator="true" 
+                                 iOsSpecific:NavigationPage.IsNavigationBarTranslucent="true"
+                                 BarTextColor="Black">
         <x:Arguments>
             <views:NewsPage></views:NewsPage>
         </x:Arguments>
